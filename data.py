@@ -92,3 +92,15 @@ class ChatDatasetFormatter:
             print(f"CSV saved with {len(df)} conversations.")  # Print the number of conversations saved
         except json.JSONDecodeError as e:
             print(f"Error processing file {self.file_name}: {e}")
+
+
+
+#usage
+
+# input_folder_path = "friend_chat.txt"  # The folder where 'FriendChat.txt' is located
+# output_folder_path = "new_file.csv"  # The folder where you want the output JSON file to be saved
+
+# preprocess_and_convert_to_samsum(input_folder_path, output_folder_path)
+
+# formatter = ChatDatasetFormatter('new_file.json', 'Aadi', 'hf_data.csv')
+# formatter.prepare_dataset()
